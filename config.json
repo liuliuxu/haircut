@@ -1,0 +1,14 @@
+{
+  "server": {
+    "port": 5181
+  },
+  "web": {
+    "port": 5180
+  },
+  "admin": {
+    "username": "admin",
+    "password": "admin123",
+    "name": "超级管理员"
+  },
+  "database": "./data/barber.db"
+}

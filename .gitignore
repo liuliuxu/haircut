@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# 本地营业数据只保存在本机，不入库（会员/订单/封存快照）
+data/*.db
+data/*.db-*
+data/archives/
+
+# 前端构建产物已纳入仓库（admin/dist），克隆后无需重新构建即可运行

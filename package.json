@@ -1,0 +1,16 @@
+{
+  "name": "barber-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "理发店经营管理系统（本地 Node + SQLite + Vue3 后台）",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix admin install",
+    "dev": "concurrently -k -n server,web -c green,cyan \"npm:dev --prefix server\" \"npm:dev --prefix admin\"",
+    "start": "npm run dev",
+    "build": "npm --prefix admin run build",
+    "serve": "npm --prefix server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
